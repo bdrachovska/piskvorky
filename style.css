@@ -17,29 +17,32 @@ html {
 h1 {
   font-family: lobster;
   text-align: center;
-  font-size: 34;
+  font-size: 56;
+  padding-top: 35px;
+  margin-bottom: 0;
 }
 
-.obal {
+.obal__hlavni {
   width: 355px;
   margin: 0 auto;
   background-color: #283e50;
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
   color: #ffffff;
   font-family: sans-serif;
   text-align: center;
   line-height: 25px;
+  margin-top: 55px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .odstavec {
   padding: 25px;
 }
 
-img {
+.uvodni {
   width: 355px;
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
 body {
@@ -70,6 +73,90 @@ a {
   display: block;
 }
 
+.obal__pravidla {
+  margin: 0 auto;
+  background-color: #283e50;
+  color: #ffffff;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 25px;
+  margin-top: 55px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 .tlacitko2:hover {
   background-color: #0090e9;
+}
+
+ol {
+  list-style-position: inherit;
+  text-align: left;
+  line-height: normal;
+}
+li {
+  margin-top: 15px;
+}
+.krizky_kolecka {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
+}
+figcaption.textgit__pravidla--popisky {
+  text-align: center;
+  line-height: normal;
+  margin-top: 0;
+}
+
+.textgit__pravidla {
+  padding: 10%;
+}
+
+img.textgit__pravidla--obrazky {
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 96%;
+}
+
+@media (min-width: 800px) {
+  body {
+    font-size: 20px;
+  }
+  .obal__pravidla {
+    width: 80vw;
+  }
+  .obal__obrazky {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  figure.obal__obrazky--instrukce {
+    width: 28vw;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 25px;
+  }
+  .obal__pravidla {
+    width: 80vw;
+    max-width: 1100px;
+  }
+  .obal__obrazky {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  img.textgit__pravidla__obrazky {
+    max-width: 28vw;
+  }
+
+  figure.obal__obrazky--instrukce {
+    width: 28vw;
+    margin: 10px;
+    max-width: 400px;
+  }
 }

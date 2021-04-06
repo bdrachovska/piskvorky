@@ -175,9 +175,9 @@ h2 {
 }
 
 .obal__hra {
+  max-width: 80vmin;
   display: flex;
   flex-wrap: wrap;
-  max-width: 80vmin;
   justify-content: space-around;
   margin: 0 auto;
 }
@@ -193,6 +193,7 @@ h2 {
 
 .tlacitka__hra {
   display: flex;
+  justify-content: right;
 }
 
 a.tlacitko__domu {
@@ -201,7 +202,7 @@ a.tlacitko__domu {
   margin: 9px;
   padding: 3px;
   background-color: #1fcca4;
-  display: block;
+  display: flex;
 }
 a.tlacitko__hrat__znovu {
   border: solid 2px #0197f6;
@@ -209,7 +210,7 @@ a.tlacitko__hrat__znovu {
   margin: 9px;
   padding: 3px;
   background-color: #0197f6;
-  display: block;
+  display: flex;
 }
 
 a.tlacitko__domu:hover {
@@ -237,5 +238,11 @@ button {
   border-collapse: collapse;
 }
 button:hover {
-  background-color: #ffc8da;
+  background-color: #a4a1db;
+}
+
+@media (max-width: 800px) {
+  button {
+    padding: 1rem;
+  }
 }

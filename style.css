@@ -47,6 +47,7 @@ h1 {
 
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat;
   min-height: 100vh;
 }
 
@@ -183,17 +184,19 @@ h2 {
 }
 
 .hrac {
-  display: flex;
   color: white;
   font-family: sans-serif;
-  font-size: 25px;
-  margin: 0;
-  padding: 0;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .tlacitka__hra {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
 }
 
 a.tlacitko__domu {
@@ -245,4 +248,21 @@ button:hover {
   button {
     padding: 1rem;
   }
+}
+
+.board__field--circle {
+  background-image: url(/obrazky/circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+.board__field--cross {
+  background-image: url(/obrazky/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+
+.board__field--none {
+  background-image: none;
 }

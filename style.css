@@ -267,11 +267,3 @@ button:hover {
 .board__field--none {
   background-image: none;
 }
-
-.hrac__kolecko {
-  color: pink;
-}
-
-.hrac__krizek {
-  color: rebeccapurple;
-}

@@ -252,13 +252,13 @@ button:hover {
 }
 
 .board__field--circle {
-  background-image: url(/obrazky/circle.svg);
+  background-image: url(obrazky/circle.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 75%;
 }
 .board__field--cross {
-  background-image: url(/obrazky/cross.svg);
+  background-image: url(obrazky/cross.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 75%;

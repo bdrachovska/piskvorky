@@ -50,16 +50,16 @@ const naTahu = (event) => {
   const winning = isWinningMove(event.target);
 
   if (winning === true && getSymbol(event.target) === 'circle') {
-    let msg = `Toto kolo zvítězil kroužek.`;
+    let msg = `Zvítězil kroužek. Hrát znovu?`;
     setTimeout(() => {
       alert(msg);
-      location.href = 'hra.html';
+      location.reload();
     }, 200);
   } else if (winning === true && getSymbol(event.target) === 'cross') {
-    let msg = `Toto kolo zvítězil křížek.`;
+    let msg = `Zvítězil křížek. Hrát znovu?`;
     setTimeout(() => {
       alert(msg);
-      location.href = 'hra.html';
+      location.reload();
     }, 200);
   }
 };

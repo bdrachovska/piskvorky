@@ -19,7 +19,6 @@ const getPosition = (field) => {
     column: fieldIndex % boardSize,
   };
 };
-console.log(getPosition(fields[35]));
 
 const getField = (row, column) => fields[row * boardSize + column];
 
@@ -30,6 +29,7 @@ const getSymbol = (field) => {
     return 'circle';
   }
 };
+
 /**ukol 4*/
 let hraje = 'circle';
 const hrajeElm = document.querySelector('#krizky_kolecka');
@@ -46,6 +46,22 @@ const naTahu = (event) => {
     hrajeElm.alt = 'Na tahu kolečko.';
   }
   event.target.disabled = true;
+
+  const winning = isWinningMove(event.target);
+
+  if (winning === true && getSymbol(event.target) === 'circle') {
+    let msg = `Toto kolo zvítězil kroužek.`;
+    setTimeout(() => {
+      alert(msg);
+      location.href = 'hra.html';
+    }, 200);
+  } else if (winning === true && getSymbol(event.target) === 'cross') {
+    let msg = `Toto kolo zvítězil křížek.`;
+    setTimeout(() => {
+      alert(msg);
+      location.href = 'hra.html';
+    }, 200);
+  }
 };
 
 const tlacitkoHra = document.querySelectorAll('button');
@@ -103,18 +119,3 @@ const isWinningMove = (field) => {
 
   return false;
 };
-
-const winning = (event) => isWinningMove(e.target);
-{
-  if (winning === true && getSymbol === 'circle') {
-    let alert = `Toto kolo zvítězil kroužek.`;
-    if (alert === true) {
-      location.href('hra.html');
-    } else if (winning === true && getSymbol === 'cross') {
-      let alert = `Toto kolo zvítězil křížek.`;
-      if (alert === true) {
-        location.href('hra.html');
-      }
-    }
-  }
-}

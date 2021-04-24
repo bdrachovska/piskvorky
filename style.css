@@ -166,6 +166,7 @@ img.textgit__pravidla--obrazky {
     max-width: 400px;
   }
 }
+/* xxxxxxx Ukol xxxxxxxxxx 3*/
 
 h2 {
   color: white;
@@ -175,46 +176,42 @@ h2 {
   padding-top: 35px;
   margin-bottom: 0;
 }
-
-.obal__hra {
+.obal {
   max-width: 80vmin;
+  margin: 25px auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 auto;
+  flex-direction: column;
+}
+.obal__hra {
+  display: flex;
+  justify-content: space-between;
 }
 
 .hrac {
   color: white;
   font-family: sans-serif;
   font-size: 1.5rem;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: baseline;
-  justify-content: space-between;
+  display: inline-block;
+  margin: 0px;
 }
 
 .tlacitka__hra {
   display: flex;
-  justify-content: space-between;
 }
 
 a.tlacitko__domu {
   border: solid 2px #1fcca4;
   border-radius: 5%;
-  margin: 9px;
+  margin: 0.6rem 0 0 0;
   padding: 3px;
   background-color: #1fcca4;
-  display: flex;
 }
 a.tlacitko__hrat__znovu {
   border: solid 2px #0197f6;
   border-radius: 5%;
-  margin: 9px;
+  margin: 0.6rem 0 0 0;
   padding: 3px;
   background-color: #0197f6;
-  display: flex;
 }
 
 a.tlacitko__domu:hover {
@@ -230,13 +227,16 @@ a.tlacitko__hrat__znovu:hover {
 }
 table {
   max-width: 80vmin;
-  margin: 0 auto;
   border: solid 1px black;
   border-collapse: collapse;
   background-color: black;
+  margin: 0 auto;
 }
+
+/* xxxxxxx Ukol xxxxxxxxxx 4*/
+
 button {
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #9591d8;
   border: solid 1px black;
   border-collapse: collapse;
